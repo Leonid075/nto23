@@ -26,5 +26,5 @@ python3 vae_train.py --train train_processed/ --vocab ./vocab.txt --save_dir ckp
 
 ## Sample Molecules
 ```
-python sample.py --vocab ./vocab.txt --model ckpt/tmp/model.1 > outputs.txt
+python sample.py --vocab ./vocab.txt --model ../data/model30.pt > outputs.txt
 ```
