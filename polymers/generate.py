@@ -41,7 +41,7 @@ vocab = [x.strip("\r\n ").split() for x in open('./vocab.txt')]
 MolGraph.load_fragments([x[0] for x in vocab if eval(x[-1])])
 vocab = PairVocab([(x, y) for x, y, _ in vocab])
 model = HierVAE(vocab).cuda()
-model.load_state_dict(torch.load('./model30.pt'))
+model.load_state_dict(torch.load('../data/model30.pt'))
 model.eval()
 
 
